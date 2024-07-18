@@ -17,6 +17,22 @@ main section{
     box-shadow:1px 1px 3px gray;
 }
 
+.rel{
+    position:relative;
+    z-index:100;
+}
+
+.abs{
+    position:absolute;
+    right:76px;
+    top:0px;
+    z-index: 0;
+}
+
+.rel2{
+    position:relative;
+}
+
 h1{
     color: hsl(0, 2%, 90%)
 }
@@ -29,6 +45,7 @@ h2{
 h3{
     font-weight: 500;
     font-size: 24px;
+    z-index: 100000;
 }
 
 .d-flex{
@@ -73,28 +90,12 @@ h3{
         flex-direction: column;
         max-width: 380px;
         gap: 15px;
-        margin:auto    }
+        margin:auto
+        }
+        .abs{
+            right: 20px;
+        }
     q{
         display: block;
     }
-    /* .div1{
-        grid-column: 1;
-        grid-row: 1/1;
-    }
-    .div2{
-        grid-column: 1;
-        grid-row:2;
-    }
-    .div3{
-        grid-column: 1;
-        grid-row: 3;
-    }
-    .div4{
-        grid-column: 1;
-        grid-row: 4;
-    }
-    .div5{
-        grid-column: 1;
-        grid-row: 5;
-    } */
 }
